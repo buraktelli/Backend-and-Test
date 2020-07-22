@@ -24,6 +24,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm run unit:test
     - run: npm install
     - run: chmod +rwx ./node_modules/.bin/jest
+    - run: npm run unit:test
+
