@@ -8,15 +8,12 @@ setDatabaseConfig({
     adminUsername: 'adminTest',
     adminPlainPassword: 'gizlisifrem',
 });
-const { sequelize, Intersection, User } = require('../entity/db');
+const {  Intersection, User } = require('../entity/db');
 const request = require('supertest');
-const { app, initAdmin } = require('../app');
-const api = require('../app');
-
+const { app } = require('../app');
 
 describe('unit test', () => {
     beforeAll(async () => {
-        //await initAdmin();
     })
     afterAll(async () => {
 
