@@ -1,4 +1,4 @@
-aaa
+
 const { setDatabaseConfig } = require('../entity/database-config-manager')
 setDatabaseConfig({
     host: 'localhost',

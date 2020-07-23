@@ -89,7 +89,8 @@ app.post('/api/intersection/insert/', outCheck, async (req, res, next) => {
         };
         const result = await Intersection.create({
             name: req.body.name,
-            geom: point
+            geom: point,
+            
         })
         res.json(result)
     } catch (error) {
